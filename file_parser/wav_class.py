@@ -37,4 +37,10 @@ class WavFile:
         return str(self.__header_values)
     
     def get_header_value(self, key):
-        return self.__header_values[key]
+
+        try:
+            result = self.__header_values[key]
+        except KeyError:
+            result = None
+
+        return result
