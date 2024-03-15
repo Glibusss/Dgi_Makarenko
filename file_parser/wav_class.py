@@ -35,3 +35,6 @@ class WavFile:
 
     def __repr__(self):
         return str(self.__header_values)
+    
+    def get_header_value(self, key):
+        return self.__header_values[key]
