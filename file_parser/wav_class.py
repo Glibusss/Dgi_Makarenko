@@ -57,3 +57,8 @@ class WavFile:
 
         return chunks
         
+    def get_payload(self):
+        return self.__file_data[44:]
+    
+    def get_header(self):
+        return self.__file_data[0:44]
