@@ -44,7 +44,7 @@ class WavFile:
 
         return result
 
-    def split_to_chunks(self, max_time):
+    def split_to_chunks(self, max_time=1e-3):
         
         sample_rate = self.get_header_value('sample_rate')
 

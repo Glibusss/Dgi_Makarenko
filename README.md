@@ -35,3 +35,6 @@ print(value)
 * bits_per_sample
 * data_chunk_id
 * data_chunk_size
+
+**split_to_chunks** разбивает на массив чанков
+Параметры: max_time: float - размер одного чанка во времени. Значение по умолчанию 1 мс
